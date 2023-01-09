@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+.App{
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
+  height:100vh;
+  align-items: stretch;
+  font-family: "Inter", sans-serif;
+}
+
+header{
+  z-index: 20;
+}
+
+.Navbar{
+  background-color: #201c24;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  align-items: center;  
+  box-shadow: 0px 5px 35px 0px rgb(31, 30, 30);
+}
+
+.NavLogo{
+  color: #61dafb;
+  padding-left: .5rem;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+.NavText{
+  color: white;
+  padding-right: 2rem;
+}
+
+.NavLogo>img{
+width: 80px;
+
+}
+
+
+.Main{
+  padding: 2rem;
+  background-image: url("https://cdn.vox-cdn.com/thumbor/KPhlqfCK1CmFIZ_xG43dD1A79xw=/0x0:1518x847/1200x675/filters:focal(638x303:880x545)/cdn.vox-cdn.com/uploads/chorus_image/image/66512640/Screen_Shot_2020_03_13_at_10.03.13_AM.0.png");
+  background-position: 10rem -2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.Content>ul li{
+padding-bottom: 1rem;
+}
+
+.Main{
+  height:100vh;
+}
+.Content>ul li::marker{
+  
+  color: #61dafb;
+font-size: 1.2rem;
+}
+
+.Title{
+  font-weight: 500;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listItem{
+  color: white;
 }
